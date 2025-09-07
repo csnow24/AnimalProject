@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown {
+  position: absolute;
+  width: 250px;
+  background: white;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.05);
+  border-radius: 5px;
+  margin-top: 0.3rem;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(0.5rem);
+  transition: all 0.2s ease;
+  z-index: 1000;
+}
+
+.dropdown a {
+  display: block;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown a:hover {
+  background-color: #166e67;
+  color: white;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0rem);
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.arrow {
+  transition: transform 0.2s ease;
+}
+
+.arrow.arrow {
+  transform: rotate(180deg);
+}
+
+
